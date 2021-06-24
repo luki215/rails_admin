@@ -46,7 +46,7 @@
     $previous.trigger(hideEvent)
     $this.trigger(showEvent)
 
-    if (showEvent.isDefaultPrevented() || hideEvent.isDefaultPrevented()) return
+    if (selector == '#' || showEvent.isDefaultPrevented() || hideEvent.isDefaultPrevented()) return
 
     var $target = $(document).find(selector)
 
